@@ -1,15 +1,5 @@
 pipelineJob('job1') {
-#   agent {
-#       node {
-#           label 'generic-build'
-#       }
-#   }
-
-#   stages {
-#       stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-#       }
-#   }
+  steps {
+    echo 'Hello World'
+  }
 }
