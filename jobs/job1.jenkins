@@ -1,4 +1,4 @@
-pipeline {
+pipelineJob {
     agent {
         node {
             label 'generic-build'
