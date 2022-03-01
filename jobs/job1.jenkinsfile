@@ -1,10 +1,12 @@
 job('demo') {
+    label('generic-build')
     steps {
         shell('echo Hello World!')
     }
 }
 
 pipelineJob('github-demo') {
+    label('generic-build')
     definition {
         cpsScm {
             scm {
