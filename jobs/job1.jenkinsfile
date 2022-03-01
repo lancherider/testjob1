@@ -23,3 +23,12 @@ pipelineJob('github-demo') {
     }
 }
 
+job('mygithubdemo') {
+    label('generic-build')
+    scm {
+        github('jenkinsci/pipeline-examples')
+    }
+    steps {
+        dsl(['declarative-examples/simple-examples/environmentInStage.groovy'])
+    }
+}
