@@ -6,7 +6,9 @@ job('demo') {
 }
 
 pipelineJob('github-demo') {
-    label('generic-build')
+    parameters {
+      labelParam('generic-build')
+    }
     definition {
         cpsScm {
             scm {
