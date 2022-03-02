@@ -1,14 +1,6 @@
-pipeline {
-    agent {
-        node {
-            label 'generic-build'
-        }
-    }
-    stages {
-        stage('Testing') {
-            steps {
-                sh 'git --version'
-            }
-        }
+job('demo2') {
+    label('generic-build')
+    steps {
+        shell('git --version')
     }
 }
