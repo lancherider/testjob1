@@ -4,13 +4,3 @@ job('demo') {
         shell('echo Hello World!')
     }
 }
-
-job('mygithubdemo') {
-    label('generic-build')
-    scm {
-        github('jenkinsci/pipeline-examples')
-    }
-    steps {
-        dsl(['declarative-examples/simple-examples/environmentInStage.groovy'])
-    }
-}

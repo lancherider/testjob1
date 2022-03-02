@@ -1,0 +1,14 @@
+pipeline {
+    agent {
+        node {
+            label 'generic-build'
+        }
+    }
+    stages {
+        stage('Testing') {
+            steps {
+                sh 'git --version'
+            }
+        }
+    }
+}
