@@ -1,0 +1,6 @@
+job('Sync All SCPs') {
+    label('SCP-All')
+    steps {
+        shell('/usr/bin/pwsh')
+    }
+}
